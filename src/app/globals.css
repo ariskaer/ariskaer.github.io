@@ -1,0 +1,66 @@
+/* src/app/globals.css */
+:root {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --accent-gray: #333333;
+  --light-gray: #cccccc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+a { text-decoration: none; color: inherit; transition: 0.3s; }
+a:hover { color: var(--light-gray); }
+ul { list-style: none; }
+
+/* Контейнер для центровки */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Секции */
+section { padding: 80px 0; border-bottom: 1px solid var(--accent-gray); }
+
+/* Заголовки */
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Кнопки */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+
+/* АДАПТИВНОСТЬ (Требование ТЗ) */
+@media (max-width: 768px) {
+  h2 { font-size: 2rem; }
+  section { padding: 50px 0; }
+  .container { padding: 0 15px; }
+}
